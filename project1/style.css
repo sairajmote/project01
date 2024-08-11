@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes change {
+    0% {
+        background-image: url(salad.jpg);
+    }
+
+    20% {
+        background-image: url(greentea.jpg);
+    }
+
+    40% {
+        background-image: url(idli.jpg);
+    }
+
+    60% {
+        background-image: url(sandwich.jpg);
+
+
+    }
+
+    80% {
+        background-image: url(burger.jpg);
+    }
+
+    100% {
+        background-image: url(noodles.jpg);
+    }
+
+
+
+}
+
+.priority {
+    z-index: 1;
+    position: relative;
+}
+
+.backgroundIM {
+    position: relative;
+    background-image: url(burger.jpg);
+    filter: brightness(100%);
+   height: 155vh;
+    max-width: 100%;
+    background-position: center center;
+    background-size: 118%;
+    background-repeat: no-repeat;
+    animation: change 20s infinite ease-in-out;
+}
+/* 
+.shadow {
+    position: sticky;
+    top: 0; 
+   z-index: 1;
+    height: 733.663px;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.616);
+    opacity: 0.7;
+    
+
+} */
+
+
+.bar {
+    position: relative;
+    z-index: 1;
+
+}
+
+ul {
+    background-color: rgba(128, 128, 128, 0.707);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 120px;
+    border-radius: 10px;
+    transform: translateY(10px);
+    margin: 0 10px;
+    height: 63px;
+    padding: 0 66px;
+}
+
+#white a {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    font-weight: 700;
+
+
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-family: 'Segoe UI';
+    font-size: 23px;
+    text-decoration: none;
+
+
+}
+
+a:hover {
+    border-radius: 5px;
+    font-size: 30px;
+    background-color: rgba(128, 128, 128, 0.707);
+}
+
+.container1 {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 280px;
+    max-width: 100%;
+
+    margin-top: 30px;
+}
+
+.container1 img {
+
+    height: 105px;
+    border-radius: 100px;
+    filter: brightness(100%);
+
+    margin-bottom: 10px;
+
+}
+
+.seachbar {
+    background-color: rgba(153, 152, 152, 0.707);
+    opacity: 0.7;
+
+    margin-top: 20px;
+    border-radius: 50px;
+    padding: 0 20px;
+    height: 35px;
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.search-btn img {
+    transform: translateY(2px);
+    height: 20px;
+    transform: translateY(7px);
+}
+
+.seachbar button:hover {
+    background-color: rgba(153, 152, 152, 0.707);
+
+}
+
+.borderless {
+    position: relative;
+    z-index: 1;
+    max-height: 100%;
+    background-color: rgba(153, 152, 152, 0.707);
+    background: transparent;
+    border-width: 0;
+
+    outline: none;
+}
+
+::placeholder {
+    z-index: 1;
+    position: relative;
+    color: white;
+
+}
+
+.seachbar button {
+    max-height: 100%;
+    border-width: 0;
+    outline: none;
+}
+
+.quates {
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Segoe UI';
+    font-size: 22px;
+    width: 60vw;
+    color: white;
+}
+
+.output {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    color: white;
+    font-size: 20px;
+    margin-top: -30px;
+    font-family: 'Segoe UI';
+    font-weight: bolder;
+}
+
+.result {
+    background-color: rgba(105, 105, 104, 0.748);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    margin: 10px 25px;
+    border-radius: 10px;
+    /* border: 2px solid black; */
+    height: 310px;
+    padding: 10px;
+    overflow-y: scroll;
+    scrollbar-gutter: 20px;
+    margin-bottom: 0;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+    background-color: rgba(128, 128, 128, 0.707);
+    border-radius: 10px;
+    transform: translateX(20px);
+}
+
+::-webkit-scrollbar-thumb {
+    width: 20px;
+    border-radius: 10px;
+    background-color: rgba(71, 71, 71, 0.707);
+}
+
+.recipe {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* border: 2px solid black; */
+    border-radius: 15px;
+    width: 310px;
+    height: 310px;
+    background-color: rgba(255, 255, 255, 0.777);
+    gap: 10px;
+}
+
+.recipe img {
+    filter: brightness(150%);
+    border-radius: 20px;
+    margin-top: 15px;
+    max-height: 60%;
+    width: 280px;
+}
+
+.name {
+    color: rgb(235, 150, 39);
+    font-size: 32px;
+}
+
+.get-btn button {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: 'Segoe UI';
+    font-weight: bolder;
+    background-color: #222222;
+    border-width: 0;
+    border-radius: 10px;
+    padding: 5px 10px;
+    display: flex;
+
+}
+
+.get-btn button:hover {
+    height: 38px;
+    font-size: 22px;
+    background-color: #1d1d1d;
+    padding: 5px 13px;
+}
+.box{
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+    background-color: wheat;
+    position: sticky;
+    top: auto;
+ display: none;
+    height: 90vh;
+    width: 70vw;
+    z-index: 1;
+    transform: translateY(-545.4px);
+    
+margin: auto;
+padding: 20px;
+border-radius: 20px;
+
+}
+
+.details{
+    padding: 5px;
+    color: white;
+    max-height: 100%;
+    background-color: #222222;
+    overflow-y: scroll;
+}
+.photo{
+    width: 90%;
+margin: auto 0;
+
+}
+.photo img{
+    filter: brightness(150%);
+    width: 100%;
+margin: auto;
+border-radius: 15px;
+}
